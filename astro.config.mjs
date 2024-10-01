@@ -4,6 +4,6 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: 'https://chatflowbuilder.com',
+  site: 'https://carlosfdiazsanchez.github.io',
   integrations: [mdx(), sitemap(), tailwind()]
 });
