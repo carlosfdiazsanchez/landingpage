@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import Logo from "/public/logo.svg";
+import FooterCard from "./FooterCard.astro";
+const today = new Date();
+---
+
+<footer>
+  <div class="p-10 md:mt-20 lg:mt-20">
+    <div class="mx-auto">
+      <div class="divider-top"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-10 mt-10 max-w-7xl mx-auto">
+        <div class="flex relative w-60 md:h-10 md:left-5 md:top-0 justify-start mb-5">
+          <Image loading={"lazy"} src={Logo} alt={"Chat Flow Builder Logo"} />
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 col-span-2">
+          <FooterCard />
+        </div>
+      </div>
+      <div class="mx-auto">
+        <div class="divider-top"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 max-w-7xl mx-auto">
+          <div class="md:flex md:row-start-2 md:row-end-2 md:col-start-2 md:col-end-2">
+            <p class="mt-5 text-center md:w-2/4 font-color-body">Follow us on social media</p>
+            <div class="flex md:w-2/4 h-10 md:h-auto md:justify-evenly justify-around items-center">
+              <a class="flex items-center ml-5 font-color-body" href="https://www.linkedin.com/in/carlosfrederickdiazsanchez/" target="_blank"><span class="size-5 icon-[mdi--linkedin]"></span></a>
+              <a class="flex items-center font-color-body" href="#"><span class=" size-5 icon-[line-md--twitter-x]"></span></a>
+              <a class="flex items-center ml-3 font-color-body" href="#"><span class="size-5 icon-[line-md--facebook]"></span></a>
+              <a class="flex items-center ml-3 font-color-body" href="#"><span class="size-5 icon-[line-md--instagram]"></span></a>
+            </div>
+          </div>
+          <div class="divider-top md:row-start-1"></div>
+          <div class="md:row-start-2 md:row-end-3">
+            <p class="font-color-body mt-5 text-center md:text-left">
+              Copyright &copy; {today.getFullYear()} Chat Flow Builder. All rights
+              reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .social-icons:hover {
+    cursor: pointer;
+  }
+  .divider-top {
+    border-top: 0.1rem solid #6b7280;
+    opacity: 0.1;
+  }
+</style>

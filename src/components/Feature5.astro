@@ -1,0 +1,77 @@
+---
+import { Image } from "astro:assets";
+import Image1 from "/public/Virtual-Meeting-Platform-Collaboration-Image-1.webp";
+import Image2 from "/public/Virtual-Meeting-Platform-Collaboration-Image-2.webp";
+import Image3 from "/public/virtual-meeting-platform-feature-2.webp";
+
+const features = [
+  {
+    image: Image1,
+    title: "In-Call Messaging",
+    description:
+      "Virtual events make it easier for users to follow their interactions. Users easily understand the topics discussed.",
+  },
+  {
+    image: Image2,
+    title: "Private Chat Rooms",
+    description:
+      "Virtual events make it easier for users to follow their interactions. Users easily understand the topics discussed.",
+  },
+  {
+    image: Image3,
+    title: "Free Mobile App",
+    description:
+      "Virtual events make it easier for users to follow their interactions. Users easily understand the topics discussed.",
+  },
+];
+---
+
+<div class="p-10 mt-10 md:mt-28 lg:mt-28">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center">
+      <h2 class="font-color-body">
+        <span class="text-white">Collaboration</span> made easy
+      </h2>
+    </div>
+    <div class="text-center">
+      <p class="font-color-body parragraph">
+        Fully loaded with features designed to give you the best web
+        conferencing experience ever.
+      </p>
+    </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-auto mt-14"
+    >
+      {
+        features.map((feature) => (
+          <div class="p-5 feature-container">
+            <Image
+              loading={"lazy"}
+              src={feature.image}
+              alt={feature.title}
+              class="h-96 object-contain w-full"
+            />
+            <h3 class="text-white mt-10">{feature.title}</h3>
+            <p class="font-color-body mt-5">{feature.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .feature-container {
+    background-color: #15181e;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #e3e5e829;
+    border-radius: 10px;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+</style>

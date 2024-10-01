@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import Image1 from "/public/Virtual-Meeting-Platform-Meeting-Image-2.webp";
+import Image2 from "/public/Virtual-Meeting-Platform-Meeting-Image1.webp";
+---
+
+<div class="p-10 mt-20">
+    <div class="max-w-7xl mx-auto w-full h-auto flex flex-col">
+        <h2 class="font-color-body text-center mb-5">Features that help for <span class="text-white"> easy meetings</span></h2>
+        <p class="font-color-body text-center mb-16 text-base">Fully loaded with features designed to give you the best web conferencing experience ever.</p>
+        <div class="relative flex flex-col-reverse md:flex-row-reverse">
+            <div class="relative">
+                <div class="relative mb-10">
+                    <div class="custom-icon mb-3"><span class="text-white icon-[solar--layers-linear]"></span></div> 
+                    <h3 class="text-white text-lg">HD on any device</h3>
+                    <p class="font-color-body text-base">Connect hybrid teams over flawless HD video and audio across multiple devices, with no time limitations and support for up to 200 video participants.</p>
+                </div>
+                <div class="relative mb-10">
+                    <div class="custom-icon mb-3"><span class="text-white icon-[material-symbols--security]"></span></div>
+                    <h3 class="text-white text-lg">Uncompromised security</h3>
+                    <p class="font-color-body text-base">Protect every conversation with end-to-end encryption, passcode protection, waiting room, and other amazing features.</p>
+                </div>
+                <div class="relative mb-10">
+                    <div class="custom-icon mb-3"><span class="text-white icon-[circum--mobile-4]"></span></div>
+                    <h3 class="text-white text-lg">Switch from phone to video with a tap</h3>
+                    <p class="font-color-body text-base">Hop from a phone call straight to a video call without opening another app.</p>
+                </div>
+            </div>
+            <div class="relative flex flex-col-reverse md:w-full">
+                <Image class="image-effect relative left-7 bottom-20 z-10 md:absolute md:bottom-10 md:left-20 md:w-96" loading={"lazy"} src={Image1} alt={'Image of Persons'}  />
+                <Image class="image-effect relative z-0 md:absolute md:top-0 md:w-5/6" loading={"lazy"} src={Image2} alt={'Image of Terminal'}  />
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .image-effect {
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: #e3e5e829;
+        border-radius: 10px;
+    }
+    .custom-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333333;
+        font-size: 26px;
+        width: 50px;
+        overflow: hidden;
+        padding: 12px 12px 12px 12px;
+        border-radius: 7px 7px 7px 7px;
+    }
+</style>

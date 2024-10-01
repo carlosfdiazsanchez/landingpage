@@ -1,0 +1,73 @@
+---
+---
+<div class="pt-20 mt-48">
+    <div class="max-w-7xl mx-auto w-full h-auto flex flex-col justify-center items-center">
+        <div class="w-full">
+            <h4 class="font-color-body text-center text-xs uppercase">Trusted by industry leaders</h4>
+        </div>
+        <div class="scroller">
+            <div class="scroller__inner md:flex">
+                <ul class="tag-list">
+                    <li class="md:w-44 md:ml-10"><img src="https://aiwave-nextjs.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fslack.bec427d7.png&w=384&q=75" alt=""></li>
+                    <li class="md:w-44 md:ml-10"><img src="https://aiwave-nextjs.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fspotify.fc305956.png&w=256&q=75" alt=""></li>
+                    <li class="md:w-44 md:ml-10"><img src="https://aiwave-nextjs.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstrapi.578b14dc.png&w=256&q=75" alt=""></li>
+                    <li class="md:w-44 md:ml-10"><img src="https://aiwave-nextjs.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmapbox.1813a725.png&w=384&q=75" alt=""></li>
+                    <li class="md:w-44 md:ml-10"><img src="https://aiwave-nextjs.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwoocommerce.18e5d287.png&w=384&q=75" alt=""></li>
+                    <li class="md:w-44 md:ml-10"><img src="https://aiwave-nextjs.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstenciljs.be396549.png&w=384&q=75" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .tag-list {
+        margin: 0;
+        padding-inline: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        flex-shrink: 0;
+    }
+    .tag-list li {
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tag-list li > img {
+        width: auto;
+        height: auto;
+        margin-left: 50px;
+    }
+    .scroller {
+        overflow: hidden;
+        height: 135px;
+        border: 1px solid #E3E5E829;
+        padding: 1rem;
+        -webkit-mask: linear-gradient(
+            90deg, 
+            transparent,
+            white 20%,
+            white 80%, 
+            transparent
+        );
+        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    }
+
+    .scroller__inner {
+        
+        width: 200%;
+        animation: scroll 20s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+</style>

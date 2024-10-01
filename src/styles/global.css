@@ -1,0 +1,82 @@
+:root {
+	--font-color-body: #7C7E82;
+}
+
+body {
+	font-family: 'inter', sans-serif;
+	position: relative;
+	background-color: #0D0E12;
+}
+
+.font-color-body {
+	color: var(--font-color-body);
+}
+
+body:before {
+	content: "";
+	display: block;
+	background: url('/noise.webp');
+	opacity: .3;
+	background-repeat: repeat;
+	background-size: 257px auto;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	pointer-events: none;
+	z-index: 99999998;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+div {
+	background-color: #0D0E12;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.5rem 0;
+	color: rgb(var(--black));
+	line-height: 1.2;
+}
+h1 {
+	font-size: 3.052em;
+}
+h2 {
+	font-size: 2.441em;
+}
+h3 {
+	font-size: 1.953em;
+}
+h4 {
+	font-size: 1.563em;
+}
+h5 {
+	font-size: 1.25em;
+}
+strong,
+b {
+	font-weight: 700;
+}
+p {
+	margin-bottom: 1em;
+}
+.prose p {
+	margin-bottom: 2em;
+}
+textarea {
+	width: 100%;
+	font-size: 16px;
+}

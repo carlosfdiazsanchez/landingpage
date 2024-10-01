@@ -1,0 +1,90 @@
+---
+const princing = [
+    {
+        title: 'Free',
+        price: '$0',
+        features: [
+            'Chats included 100/mo',
+            'Users included 1',
+            'Webchat included'
+        ],
+        button: 'Sign up, It\'s free'
+    },
+    {
+        title: 'Business',
+        price: '$50',
+        features: [
+            'Chats included 500/mo',
+            'Users included 2',
+            'Whatsapp included',
+            'Facebook included'
+        ],
+        button: 'Start Free Trial'
+    },
+    {
+        title: 'Enterprise',
+        price: '$400+',
+        features: [
+            'Chats included custom',
+            'Users included custom',
+            'Whatsapp included',
+            'Facebook included'
+        ],
+        button: 'Contact sales'
+    }
+];
+---
+
+<div class="p-10 max-w-7xl font-color-body relative flex flex-col" id="pricing">
+        <div class="text-center mb-10">
+            <h2>Our <span class="text-white">Pricing</span></h2>
+            <p>Free forever, no card required.</p>
+        </div>
+        <div class="md:flex md:gap-10">
+        {
+            princing.map((e:any) => (
+                <div class="relative custom-color text-center mb-10">
+                    <h3 class="font-color-body mt-10 mb-5">{e.title}</h3>
+                    <span class="text-white text-5xl">{e.price}<span class="text-sm font-color-body">/mo</span></span>
+                    <div class="font-color-body bg-inherit h-36">
+                        <ul class="p-5 mt-5 mb-5 text-start">
+                            {
+                                e.features.map((f:any) => (
+                                    <li><span class="ml-10 mr-2 icon-[icon-park-solid--correct]"></span>{f}</li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    <div class="bg-inherit pl-5 pr-5 mb-5"><button class="w-full"><a href="#">{e.button}</a></button></div>
+                </div>
+            ))
+        }
+        </div>
+</div>
+
+<style>
+    .custom-color {
+        background-color: #15181e;
+        width: 320px;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: #e3e5e829;
+        border-radius: 25px;
+    }
+    button {
+        background-color: #FFFFFF00;
+        color: #FFF;
+        border-radius: 10px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: #CAC5C5;
+    }
+    button:hover {
+        background-color: #FFF;
+        color: #0d0e12;
+    }
+</style>

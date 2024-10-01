@@ -1,0 +1,39 @@
+---
+import BaseHead from "@components/BaseHead.astro";
+import Footer from "@components/Footer.astro";
+import CallToAction from "@components/CallToAction.astro";
+import FQA from "@components/Faq.astro";
+import Feature4 from "@components/Feature4.astro";
+import Feature5 from "@components/Feature5.astro";
+import Metrics from "@components/Metrics.astro";
+import Hero from "@components/Hero.astro";
+import Navbar from "@components/Navbar.astro";
+import Feature3 from "@components/Feature3.astro";
+import Feature2 from "@components/Feature2.astro";
+import Customer from "@components/Customer.astro";
+import Pricing from "@components/Pricing.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <main>
+      <Navbar />
+      <Hero />
+      <Customer />
+      <Metrics />
+      <Feature2 />
+      <Feature3 />
+      <Feature4 />
+      <Feature5 />
+      <Pricing />
+      <FQA />
+      <CallToAction />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,51 @@
+---
+const metrics = [
+  {
+    value: "3x more leads",
+    label: "Make lead generation a two-way street with engaging, human-like conversations.",
+  },
+  {
+    value: "10x Booking rate",
+    label: "Increase meetings and show rates with leads who have high interest and buying intent.",
+  },
+  {
+    value: "Provide 24/7 assistance",
+    label: "Delight customers, combining bots and human agents for fast, friendly response times.",
+  },
+  {
+    value: "No-code integration",
+    label: "Easily connect with your CRM, marketing automation, and other tools.",
+  },
+];
+---
+
+<div class="p-10 mt-20 md:mt-20 wrapper">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
+    {
+      metrics.map((metric) => (
+        <div class="flex flex-col text-center px-1 special-color">
+          <span class="value">{metric.value}</span>
+          <span class="font-color-body">{metric.label}</span>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .special-color {
+    background-color: #15181e;
+  }
+  .wrapper {
+    background-color: #15181e;
+    border-style: solid;
+    border-width: 1px 0px;
+    border-color: #e3e5e829;
+    width: 100%;
+  }
+  .value {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+</style>
