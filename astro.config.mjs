@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: 'https://carlosfdiazsanchez.github.io',
+  site: 'http://drivedeal.es/',
   base: '/landingpage/',
   integrations: [mdx(), sitemap(), tailwind()]
 });
