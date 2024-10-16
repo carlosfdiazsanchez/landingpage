@@ -5,13 +5,12 @@ interface Props {
   title: string;
   description: string;
   image?: string;
+  logoForWhatsapp?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const logoForWhatsapp:string = '/images/social-whatsapp.png';
-
-const { title, description, image = "/images/social.svg" } = Astro.props;
+const { title, description, image = "/images/social.png", logoForWhatsapp = "/images/social-whatsapp.png" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
