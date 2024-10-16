@@ -5,6 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: 'drivedeal.es',
-  base: '/',
+  base: '/landingpage/',
   integrations: [mdx(), sitemap(), tailwind()]
 });
